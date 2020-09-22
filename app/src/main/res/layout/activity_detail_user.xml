@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.activity.DetailUserActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_below="@id/imgBack"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/imageback" />
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/shape_view_add" />
+
+
+            <ImageView
+                android:id="@+id/imgBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="20dp"
+                android:background="@drawable/ic_baseline_arrow_back_24" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view1"
+                android:layout_marginTop="?android:actionBarSize">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/shape_view_list_user" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="30dp">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/relativeLayout1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:textColorHint="@color/colorBlack"
+                        app:passwordToggleTint="@color/colorBlack">
+
+                        <TextView
+                            android:id="@+id/tvFullNameCustomer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/colorTransparent"
+                            android:hint="FullName"
+                            android:maxLines="1"
+                            android:textColor="@color/PinkNhe"
+                            android:textColorHint="@color/colorBlack"
+                            android:textSize="18sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <View
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/view2"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/relativeLayout1"
+                        android:background="@drawable/shape_view_gach_chan" />
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/relativeLayout4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/view2"
+                        android:layout_marginTop="10dp"
+                        android:textColorHint="@color/colorBlack"
+                        app:passwordToggleTint="@color/colorBlack">
+
+                        <TextView
+
+                            android:id="@+id/tvBirthdayCustomer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/colorTransparent"
+                            android:hint="BirthDay"
+                            android:maxLines="1"
+                            android:textColor="@color/PinkNhe"
+                            android:textColorHint="@color/colorBlack"
+                            android:textSize="18sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <View
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/view3"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/relativeLayout4"
+                        android:background="@drawable/shape_view_gach_chan" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/relativeLayout3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/view3"
+                        android:layout_marginTop="10dp"
+                        android:textColorHint="@color/colorBlack"
+                        app:passwordToggleTint="@color/colorBlack">
+
+                        <TextView
+                            android:id="@+id/tvAddressCustomer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/colorTransparent"
+                            android:hint="Address"
+                            android:maxLines="2"
+                            android:textColor="@color/PinkNhe"
+                            android:textColorHint="@color/colorBlack"
+                            android:textSize="18sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <View
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/view4"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/relativeLayout3"
+                        android:background="@drawable/shape_view_gach_chan" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/relativeLayout2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/view4"
+                        android:layout_marginTop="10dp"
+                        android:textColorHint="@color/colorBlack"
+                        app:passwordToggleTint="@color/colorBlack">
+
+                        <TextView
+                            android:id="@+id/tvPhoneCustomer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/colorTransparent"
+                            android:hint="Phone"
+                            android:maxLines="1"
+                            android:textColor="@color/PinkNhe"
+                            android:textColorHint="@color/colorBlack"
+                            android:textSize="18sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <View
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/view5"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/relativeLayout2"
+                        android:background="@drawable/shape_view_gach_chan" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/relativeLayout5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/view5"
+                        android:layout_marginTop="10dp"
+                        android:textColorHint="@color/colorBlack"
+                        app:passwordToggleTint="@color/colorBlack">
+
+                        <TextView
+                            android:id="@+id/tvEmailCustomer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/colorTransparent"
+                            android:hint="Email"
+                            android:maxLines="1"
+                            android:textColor="@color/PinkNhe"
+                            android:textColorHint="@color/colorBlack"
+                            android:textSize="18sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <View
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/view6"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/relativeLayout5"
+                        android:background="@drawable/shape_view_gach_chan" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/relativeLayout6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/view6"
+                        android:layout_marginTop="10dp"
+                        android:textColorHint="@color/colorBlack">
+
+                        <TextView
+                            android:id="@+id/tvPasswordCustomer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/colorTransparent"
+                            android:hint="Password"
+                            android:inputType="textPassword"
+                            android:maxLines="1"
+                            android:textColor="@color/PinkNhe"
+                            android:textColorHint="@color/colorBlack"
+                            android:textSize="18sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <View
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/view7"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/relativeLayout6"
+                        android:background="@drawable/shape_view_gach_chan" />
+
+                    <ImageView
+                        android:id="@+id/imageCustomer"
+                        android:layout_width="130dp"
+                        android:layout_height="150dp"
+                        android:layout_below="@id/view7"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginHorizontal="30dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/ic_upload" />
+
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+</FrameLayout>

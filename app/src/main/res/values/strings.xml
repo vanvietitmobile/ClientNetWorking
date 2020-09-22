@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ClientNetWorking</string>
+    <string name="assignment_android_networking">Assignment Android Networking</string>
+    <string name="login">Login</string>
+    <string name="i_already_have_a_login_account">I already have a login account!</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

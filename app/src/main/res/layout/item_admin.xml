@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="10dp"
+    app:cardCornerRadius="10dp"
+    android:layout_height="160dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Xe đạp"
+            android:textColor="@color/PinkNhe"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/imageTus"
+            android:layout_width="140dp"
+            android:layout_height="110dp"
+            android:layout_centerVertical="true"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvFullNameCustomer"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/imageTus"
+            android:text="20/12/2000"
+            android:textColor="@color/colorBlack"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvFullNameCustomer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvTitle"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/imageTus"
+            android:text="Phan văn việt"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvTus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvDate"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@id/imageTus"
+            android:maxLines="2"
+            android:text="dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/imageDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvTus"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/imageAccepte"
+            android:background="@drawable/ic_trash" />
+
+        <ImageView
+            android:id="@+id/imageAccepte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvTus"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/ic_yes" />
+
+        <TextView
+            android:id="@+id/tvAddressCustomer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginHorizontal="5dp"
+            android:layout_toLeftOf="@id/imageDelete"
+            android:maxLines="1"
+            android:text="K331 Ngô quyền, Mân Thái, Sơn Trà, TP Đà Nẵng"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
